@@ -1,13 +1,85 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+	box-sizing:inherit;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
-
-body{
+.container{
 	font-family: 'Exo 2', sans-serif;
 	font-size: 25px;
+	width: 960px;
+	margin: auto;
 }
 
+header{
+	padding: 15px;
+}
 
-nav{
+h1{
 	font-size: 30px;
 	font-weight: 700;
+	margin: 0;
+	padding: 0;
 }
+
+nav{
+	width: 960px;
+	margin: auto;
+}
+.navlist{
+	font-size: 28px;
+	font-weight: 700;
+	list-style-type: none;
+	float: right;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.navlist > li{
+	float:left;
+}
+
+
+.navlist a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 0 10px;
+  line-height: 1.5;
+}
+
+.navlist a:hover {
+  text-decoration: underline;
+  color:#33cc33;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
