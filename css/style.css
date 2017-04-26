@@ -17,7 +17,7 @@ html {
 
 .container{
 	font-family: 'Exo 2', sans-serif;
-	font-size: 25px;
+	font-size: 28px;
 	width: 960px;
 	margin: auto;
 }
@@ -27,53 +27,174 @@ header{
 }
 
 h1{
-	font-size: 30px;
+	font-size: 32px;
 	font-weight: 700;
 	margin: 0;
 	padding: 0;
 }
 
-nav{
-	width: 960px;
-	margin: auto;
-}
 .navlist{
-	font-size: 28px;
+	font-size: 30px;
 	font-weight: 700;
 	list-style-type: none;
-	float: right;
-	text-align: center;
 	margin: 0;
 	padding: 0;
+	text-align: center;
+
 }
 
 .navlist > li{
-	float:left;
+	display: inline-block;
 }
 
 
 .navlist a {
-  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 0 10px;
+  line-height: 1.5;
+  vertical-align: text-bottom;
+}
+
+.middle-nav{
+	font-size: 1.2em;
+}
+
+.artists{
+	padding: 10px;
+}
+
+.artists a {
   color: black;
   text-decoration: none;
   padding: 0 10px;
   line-height: 1.5;
 }
 
-.navlist a:hover {
-  text-decoration: underline;
-  color:#33cc33;
+.artists > li{
+	display: inline-block;
+}
+
+/*
+here: https://www.coachella.com/lineup/
+they use both before and after and then
+use a combination of "right: -.375rem;"
+and left on the before & after. is there 
+a better way to do this?*/
+
+.artists > li::before,
+.artists > li::after{
+	content:"\2022";
+}
+/*
+another thing about that lineup page i like
+was how the rows aren't all uniform. not 
+sure how they staggered each one*/
+
+
+
+/******************************************/
+/************Added Effects*****************/
+/******************************************/
+/* Bob */
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
 }
 
 
-
-
-
-
-
-
-
-
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #33cc33;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+/******************************************/
+/**********END Added Effects****************/
+/******************************************/
 
 
 
