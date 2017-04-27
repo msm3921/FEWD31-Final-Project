@@ -25,6 +25,7 @@ html {
 
 header{
 	padding: 15px;
+	color: #f0f0f5;
 }
 
 h1{
@@ -45,7 +46,6 @@ h1{
 	margin: 0;
 	padding: 0;
 	text-align: center;
-
 }
 
 .navlist > li{
@@ -58,11 +58,16 @@ h1{
   padding: 0 10px;
   line-height: 1.5;
   vertical-align: text-bottom;
+  color: #f0f0f5;
 }
 
 .middle-nav{
 	font-size: 1.2em;
 }
+
+/******************************************/
+/*****************Lineup*******************/
+/******************************************/
 
 .artists{
 	padding: 10px;
@@ -94,6 +99,48 @@ a better way to do this?*/
 another thing about that lineup page i like
 was how the rows aren't all uniform. not 
 sure how they staggered each one*/
+
+/******************************************/
+/***************END LINEUP*****************/
+/******************************************/
+
+
+/******************************************/
+/****************TICKETS*******************/
+/******************************************/
+.ticketHeader{
+	text-align: center;
+	width: 100%;
+}
+
+
+.ticketHeader li{
+	display: inline-block;
+	width: 30%;
+
+}
+
+.ticketHeader a{
+	text-decoration: none;
+}
+
+.ticketType{
+	width: 100%;
+}
+
+.ticketImage{
+	width: 40%;
+	float: left;
+}
+
+.ticketInfo{
+	width: 40%;
+}
+
+
+/******************************************/
+/************END TICKETS*****************/
+/******************************************/
 
 
 
