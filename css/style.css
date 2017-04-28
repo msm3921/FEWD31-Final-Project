@@ -126,15 +126,20 @@ sure how they staggered each one*/
 
 .ticketType{
 	width: 100%;
+  padding-bottom: 10px;
+  border:1px solid black;
+  margin-bottom: 10px;
 }
 
 .ticketImage{
-	width: 40%;
-	float: left;
+	width: 50%;
+  float: left;
 }
 
 .ticketInfo{
-	width: 40%;
+	width:50%;
+  float: left;
+  display: inline-block;
 }
 
 
