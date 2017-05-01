@@ -116,14 +116,11 @@ sure how they staggered each one*/
 	width: 100%;
 	border-left: 1px solid black;
 	border-right: 1px solid black;
-	margin-top: -5px;
 }
 
 .ticketHeader li{
 	display: inline-block;
 	width: 31%;
-	padding-top: 5px;
-	padding-bottom: 5px;
 }
 
 .ticketHeader li:nth-child(2){
@@ -160,7 +157,7 @@ sure how they staggered each one*/
 
 
 /******************************************/
-/**************END TICKETS*****************/
+/************END TICKETS*****************/
 /******************************************/
 
 
