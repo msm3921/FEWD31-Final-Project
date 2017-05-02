@@ -145,6 +145,7 @@ sure how they staggered each one*/
   padding-bottom: 10px;
   border:1px solid black;
   margin-bottom: 10px;
+  float:left;
 }
 
 .ticketImage{
@@ -158,6 +159,9 @@ sure how they staggered each one*/
   display: inline-block;
 }
 
+.hideMe{
+	display:none;
+}
 
 /******************************************/
 /**************END TICKETS*****************/

@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Tickets</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:300,400,600,700,800"
@@ -28,26 +29,26 @@
 		<img src="images/Banner_Sunset_FarrisWheel.jpg" alt="Tickets Banner Images" width=960px height=300px>
 		<ul class="ticketHeader">
 			<li>
-				<a href="#GA">GA</a>
+				<a class="gaButton" href="#">GA</a>
 			</li>
 			<li>
-				<a href="#VIP">VIP</a>
+				<a class="vipButton"href="#V">VIP</a>
 			</li>
 			<li>
-				<a href="#Platinum">Platinum</a>
+				<a class="platinumButton" href="#">Platinum</a>
 			</li>
 		</ul>
 	</div>
 	<div class="main">
-		<div class="tickets">
-			<div class="ticketType clearfix">
+		<div class="tickets clearfix">
+			<div class="ticketType clearfix gaInfo">
 
 				<div class="ticketImage">
 				<img src="images/placeimg_475_300_GA.jpg" alt="GA sample image">
-				</div>
+				</div
 
 				<span class="ticketInfo">
-					<div id="GA">GA</div>
+					<div>GA</div>
 					<div>$300</div>
 						<ul>
 							<li>Access to over 120 perfomances throughout the 3 day festival</li>
@@ -56,12 +57,12 @@
 						</ul>
 				</span>
 			</div>
-			<div class="ticketType clearfix">
+			<div class="ticketType clearfix vipInfo hideMe">
 				<div class="ticketImage">
 					<img src="images/placeimg_475_300_VIP.jpg" alt="VIP sample image">
 				</div>
 				<div class="ticketInfo">
-					<div id="VIP">VIP</div>
+					<div>VIP</div>
 					<div>$1000</div>
 						<ul>
 							<li>Everything included in General Admission</li>
@@ -71,12 +72,12 @@
 						</ul>
 				</div>
 			</div>
-			<div class="ticketType clearfix">
+			<div class="ticketType clearfix platinumInfo hideMe">
 				<div class="ticketImage">
 					<img src="images/placeimg_475_300_PLATINUM.jpg" alt="PLAT sample image">
 				</div>
 				<div class="ticketInfo">
-					<div id="Platinum">Platinum</div>			
+					<div>Platinum</div>			
 					<div>$1500</div>
 						<ul>
 							<li>Everything included in VIP</li>
