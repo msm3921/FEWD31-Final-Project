@@ -103,6 +103,12 @@ another thing about that lineup page i like
 was how the rows aren't all uniform. not 
 sure how they staggered each one*/
 
+.popup{
+	background-color: orange;
+	z-index: 1;
+
+}
+
 /******************************************/
 /***************END LINEUP*****************/
 /******************************************/
