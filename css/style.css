@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  background-color: #007889;
+  /*background-color: #007889;*/
 }
 
 *,
@@ -15,19 +15,32 @@ html {
   clear: both;
 }
 
-
 .container{
 	font-family: 'Exo 2', sans-serif;
 	font-size: 28px;
 	width: 960px;
 	margin: auto;
+    /*background-image: urL("../images/background.jpg"); */
+}
 
+
+.bg img{
+	 position: relative; 
+	 width: 100%;
+}
+
+.content{
+   position: absolute; 
+   top: 0px; 
+   left: 0;
+   width: 100%;
+   display: inline;
 }
 
 header{
 	padding: 15px;
 	color: #f0f0f5;
-	background-color: #007889;
+	/*background-color: #007889;*/
 
 }
 
@@ -138,7 +151,7 @@ sure how they staggered each one*/
 }
 
 .ticketSection{
-	background: #007889;
+	/*background: #007889;*/
 }
 
 .ticketHeader a{

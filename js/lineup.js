@@ -10,7 +10,7 @@ $('document').ready(function(){
 
 		console.log(target);
 
-		$('.artists').addClass(popUp);
+		// $('.artists').addClass(popUp);
 
 	}
 
