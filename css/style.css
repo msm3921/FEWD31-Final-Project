@@ -24,9 +24,9 @@ html {
 }
 
 
-.bg img{
-	 position: relative; 
+img{
 	 width: 100%;
+	 display: block;
 }
 
 .content{
@@ -38,10 +38,11 @@ html {
 }
 
 header{
-	padding: 15px;
-	color: #f0f0f5;
-	/*background-color: #007889;*/
-
+	/*padding: 15px;*/
+	/*color: #f0f0f5;*/
+	/*display: inline;*/
+	/*float: left;*/
+	
 }
 
 h1{
@@ -53,7 +54,7 @@ h1{
 
 .main{
 	/*background-color: #24293d;*/
-	color: #f0f0f5;
+	/*color: #f0f0f5;*/
 }
 .navlist{
 	font-size: 30px;
@@ -74,7 +75,7 @@ h1{
   padding: 0 10px;
   line-height: 1.5;
   vertical-align: text-bottom;
-  color: #f0f0f5;
+  /*color: #f0f0f5;*/
 }
 
 .middle-nav{
