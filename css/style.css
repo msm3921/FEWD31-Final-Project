@@ -24,9 +24,11 @@ html {
 
 
 .content{
-   background-image:url(../images/background.jpg);
-   background-repeat: no-repeat;
-   background-size: 100% 100%;
+  background-image: url(../images/background.jpg);
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  background-position-x: -100px;
 }
 
 header{
@@ -60,15 +62,15 @@ h1{
 }
 
 .firstA{
-	padding-left: 75px;
+	padding-right: 15px;
 }
 
 .secondA{
-	padding-right: 60px;
+	padding-right: 15px;
 }
 
 .thirdA{
-	padding-right: 165px;	
+	padding-right: 10px;	
 }
 
 .navlist a {
@@ -289,6 +291,24 @@ sure how they staggered each one*/
   padding-bottom: 30px;
 }
 
+.startInfo{
+  height: 374px;
+  width: 960px;
+}
+
+.gaInfo>.ticketImage{
+margin-right:100%;
+}
+
+.gaInfo>.ticketInfo{
+margin-left:100%;
+}
+
+/*.gaInfo>.ticketInfo{
+  position: absolute;
+  right:-800px;
+}
+*/
 .ticketInfo{
   padding-top: 30px;
   width:50%;
@@ -298,6 +318,7 @@ sure how they staggered each one*/
 
 .hideMe{
 	display:none;
+/*  overflow-x: hidden;*/
 }
 
 /******************************************/
