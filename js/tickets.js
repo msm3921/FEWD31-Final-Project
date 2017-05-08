@@ -15,12 +15,18 @@ function showType(event){
 	if (getType === 'gaButton'){
 		console.log('GA');
 			$('.gaInfo').show();
-			$('.ticketImage').animate({
-				'marginRight':0},800
-			);
-			$('.ticketInfo').animate({
-				'marginLeft':0},800
-			);
+
+			$('.ticketImage, .ticketInfo').addClass('ticketInfoDone');
+
+			// $('.ticketImage').css({
+			// 	transform: 'translateX(0)'
+			// });
+			// $('.ticketInfo').css({
+			// 	transform: 'translateX(0)'
+			// });
+
+			// $('.ticketImage').animate({'marginRight':0},800);
+			// $('.ticketInfo').animate({'marginLeft':0},800);
 			$('.startInfo').hide();
 			$('.vipInfo').hide();
 			$('.platinumInfo').hide();
