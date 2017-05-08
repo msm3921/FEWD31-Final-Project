@@ -84,112 +84,6 @@ h1{
 }
 
 /******************************************/
-/*****************Lineup*******************/
-/******************************************/
-
-.artists{
-	padding: 10px;
-	padding-bottom: 175px;
-}
-
-.artists a {
-  color: black;
-  text-decoration: none;
-  padding: 0 10px;
-  line-height: 1.5;
-}
-
-.artists > li{
-	display: inline-block;
-}
-
-/*
-here: https://www.coachella.com/lineup/
-they use both before and after and then
-use a combination of "right: -.375rem;"
-and left on the before & after. is there 
-a better way to do this?*/
-
-.artists > li::before,
-.artists > li::after{
-	content:"\2022";
-}
-/*
-another thing about that lineup page i like
-was how the rows aren't all uniform. not 
-sure how they staggered each one*/
-
-.popup{
-	background-color: orange;
-	z-index: 1;
-
-}
-
-/******************************************/
-/***************END LINEUP*****************/
-/******************************************/
-
-
-/******************************************/
-/****************TICKETS*******************/
-/******************************************/
-.ticketHeader{
-	text-align: center;
-	width: 100%;
-	border-left: 1px solid black;
-	border-right: 1px solid black;
-	margin-top: -5px;
-}
-
-.ticketHeader li{
-	display: inline-block;
-	width: 31%;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-.ticketHeader li:nth-child(2){
-	border-left: 1px solid black;
-	border-right: 1px solid black;
-}
-
-.ticketSection{
-	/*background: #007889;*/
-}
-
-.ticketHeader a{
-	text-decoration: none;
-}
-
-.ticketType{
-  width: 100%;
-  padding-bottom: 150px;
-  /*margin-bottom: 10px;*/
-  float:left;
-}
-
-.ticketImage{
-  width: 50%;
-  float: left;
-}
-
-.ticketInfo{
-  width:50%;
-  float: left;
-  display: inline-block;
-}
-
-.hideMe{
-	display:none;
-}
-
-/******************************************/
-/**************END TICKETS*****************/
-/******************************************/
-
-
-
-/******************************************/
 /************Added Effects*****************/
 /******************************************/
 /* Bob */
@@ -286,12 +180,128 @@ sure how they staggered each one*/
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
   left: 0;
   right: 0;
 }
 /******************************************/
-/**********END Added Effects****************/
+/**********END Added Effects***************/
+/******************************************/
+
+/******************************************/
+/*****************Lineup*******************/
+/******************************************/
+
+.artists{
+	padding: 10px;
+	padding-bottom: 175px;
+}
+
+.artists a {
+  color: black;
+  text-decoration: none;
+  padding: 0 10px;
+  line-height: 1.5;
+}
+
+.artists > li{
+	display: inline-block;
+}
+
+/*
+here: https://www.coachella.com/lineup/
+they use both before and after and then
+use a combination of "right: -.375rem;"
+and left on the before & after. is there 
+a better way to do this?*/
+
+.artists > li::before,
+.artists > li::after{
+	content:"\2022";
+}
+/*
+another thing about that lineup page i like
+was how the rows aren't all uniform. not 
+sure how they staggered each one*/
+
+.popup{
+	background-color: orange;
+	z-index: 1;
+
+}
+
+/******************************************/
+/***************END LINEUP*****************/
+/******************************************/
+
+
+/******************************************/
+/****************TICKETS*******************/
+/******************************************/
+
+.ticketHeader{
+	text-align: center;
+	width: 100%;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+  background-color: #333;
+  opacity: 0.7;
+  display: inline-block;
+
+}
+
+.ticketHeader li{
+	display: inline-block;
+	width: 31%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+  border-left: solid #f0f0f5 1px;
+}
+
+.ticketHeader li:first-of-type{
+  border-left: none;
+}
+
+.tickets{
+	padding-bottom: 130px;
+}
+
+.ticketHeader a{
+	text-decoration: none;
+  color: #f0f0f5;
+
+}
+
+.ticketType{
+  width: 100%;
+  float:left;
+  background: rgba(31,41,74,0.7);
+  margin-bottom: 20px;
+
+}
+
+
+.ticketImage{
+  width: 35%;
+  float: left;
+  height: auto;
+  padding-bottom: 30px;
+}
+
+.ticketInfo{
+  padding-top: 30px;
+  width:50%;
+  float: left;
+  display: inline-block;
+}
+
+.hideMe{
+	display:none;
+}
+
+/******************************************/
+/**************END TICKETS*****************/
 /******************************************/
 
 
