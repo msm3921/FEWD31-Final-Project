@@ -26,9 +26,10 @@ html {
 .content{
   background-image: url(../images/background.jpg);
   margin: 0 auto;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
-  background-position-x: -100px;
+  /*background-position-x: -100px;*/
+  /*background-position: center;*/
 }
 
 header{
@@ -267,6 +268,7 @@ sure how they staggered each one*/
 
 .tickets{
 	padding-bottom: 130px;
+  /*position: relative;*/
 }
 
 .ticketHeader a{
@@ -274,63 +276,58 @@ sure how they staggered each one*/
   color: #f0f0f5;
 
 }
-
 .ticketType{
   width: 100%;
-  float:left;
+ /* float:left;*/
   background: rgba(31,41,74,0.7);
+  border-radius: 10px;
   margin-bottom: 20px;
-
-}
-
-.ticketType {
   overflow: hidden;
+/*  position: relative;*/
 }
-
 
 .ticketImage{
   width: 35%;
   float: left;
   height: auto;
+  padding:15px;
   padding-bottom: 30px;
 }
 
 .startInfo{
-  height: 374px;
-  width: 960px;
+  margin-top: 20px;
+ /* set height here is hacky & also changes position
+  of background image */
+  height: 425px;
+  width: 100%;
+
 }
 
-.gaInfo>.ticketImage{
-/*margin-right:100%;*/
-  transition: transform 1s;
-  transform: translateX(-200%);
-}
-
-.gaInfo>.ticketInfo{
-/*margin-left:100%;*/
-  transition: transform 1s;
-  transform: translateX(200%);
-}
-
-.gaInfo>.ticketInfoDone {
-  transform: translateX(0);
-}
-
-/*.gaInfo>.ticketInfo{
-  position: absolute;
-  right:-800px;
-}
-*/
 .ticketInfo{
   padding-top: 30px;
   width:50%;
   float: left;
   display: inline-block;
+  overflow: hidden;
+}
+
+.startingInfo{
+    position: absolute;
+    padding:10px;
+    transform: translateX(200%);
+    overflow: hidden;
+    top: 40%;
+}
+
+.startingImage{
+    position: absolute;
+    padding:10px;
+    transform: translateX(-200%);
+    top: 40%;
 }
 
 .hideMe{
-	display:none;
-/*  overflow-x: hidden;*/
+  display:none;
 }
 
 /******************************************/
