@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   height: 100%;
+  font-family: 'Oswald', sans-serif;
 }
 
 *,
@@ -16,7 +17,7 @@ html {
 }
 
 .container{
-	font-family: 'Exo 2', sans-serif;
+	/*font-family: 'Exo 2', sans-serif;*/
 	font-size: 28px;
 	width: 960px;
 	margin: auto;
@@ -31,6 +32,12 @@ html {
   /*background-position-x: -100px;*/
   /*background-position: center;*/
 }
+
+/*.tint {
+z-index: 1;
+background-blend-mode: multiply;
+background: rgba(0, 0, 0, 0.7);    
+}*/
 
 header{
 	padding: 15px;
@@ -62,16 +69,46 @@ h1{
     padding-top: 25px;
 }
 
+.navlist a { 
+  color: #1a39ff;
+  font-family: "Pacifico", cursive;
+  font-size: 45px;
+  letter-spacing: .15em;
+  text-shadow: 
+      1px -1px 0 #767676, 
+      -1px 2px 1px #737272, 
+      -2px 4px 1px #767474, 
+      -3px 6px 1px #787777, 
+      -4px 8px 1px #7b7a7a;
+}
+
+.navlist a:hover {
+  -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon6 1.5s ease-in-out infinite alternate;
+  animation: neon6 1.5s ease-in-out infinite alternate;
+}
+
+
+.secondA:hover {
+  -webkit-animation: neon7 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon7 1.5s ease-in-out infinite alternate;
+  animation: neon7 1.5s ease-in-out infinite alternate;
+}
+
+.navlist a a:hover {
+  color: #fff;
+}
+
 .firstA{
-	padding-right: 15px;
+	padding-right: 135px;
 }
 
 .secondA{
-	padding-right: 15px;
+	padding-right: 100px;
 }
 
 .thirdA{
-	padding-right: 10px;	
+	padding-right: 40px;	
 }
 
 .navlist a {
@@ -160,7 +197,7 @@ a{
 
 
 /* Underline From Center */
-.hvr-underline-from-center {
+/*.hvr-underline-from-center {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -176,8 +213,6 @@ a{
   left: 50%;
   right: 50%;
   bottom: 0;
-  /*background: #33cc33;*/
- /* background:#00cc33; */
   background: #0099cc;
   height: 4px;
   -webkit-transition-property: left, right;
@@ -191,7 +226,111 @@ a{
 .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
   left: 0;
   right: 0;
+}*/
+
+/*Neon Effect*/
+
+/*glow for webkit*/
+
+@-webkit-keyframes neon3 {
+  from {
+    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #1a39ff, 0 0 70px #1a39ff, 0 0 80px #1a39ff, 0 0 100px #1a39ff, 0 0 150px #1a39ff;
+  }
+  to {
+    text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #1a39ff, 0 0 35px #1a39ff, 0 0 40px #1a39ff, 0 0 50px #1a39ff, 0 0 75px #1a39ff;
+  }
 }
+
+/*glow for mozilla*/
+
+@-moz-keyframes neon3 {
+  from {
+    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #1a39ff, 0 0 70px #1a39ff, 0 0 80px #1a39ff, 0 0 100px #1a39ff, 0 0 150px #1a39ff;
+  }
+  to {
+    text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #1a39ff, 0 0 35px #1a39ff, 0 0 40px #1a39ff, 0 0 50px #1a39ff, 0 0 75px #1a39ff;
+  }
+}
+
+/*glow*/
+
+@keyframes neon3 {
+  from {
+    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #1a39ff, 0 0 70px #1a39ff, 0 0 80px #1a39ff, 0 0 100px #1a39ff, 0 0 150px #1a39ff;
+  }
+  to {
+    text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #1a39ff, 0 0 35px #1a39ff, 0 0 40px #1a39ff, 0 0 50px #1a39ff, 0 0 75px #1a39ff;
+  }
+}
+
+
+/*glow for webkit*/
+
+
+@-webkit-keyframes neon6 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #1a39ff, 0 0 70px #1a39ff, 0 0 80px #1a39ff, 0 0 100px #1a39ff, 0 0 150px #1a39ff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #1a39ff, 0 0 35px #1a39ff, 0 0 40px #1a39ff, 0 0 50px #1a39ff, 0 0 75px #1a39ff;
+  }
+}
+/*glow for mozilla*/
+
+@-moz-keyframes neon6 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #1a39ff, 0 0 70px #1a39ff, 0 0 80px #1a39ff, 0 0 100px #1a39ff, 0 0 150px #1a39ff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #1a39ff, 0 0 35px #1a39ff, 0 0 40px #1a39ff, 0 0 50px #1a39ff, 0 0 75px #1a39ff;
+  }
+}
+/*glow*/
+
+
+@keyframes neon6 {
+  from {
+    text-shadow: 0 0 80px #fff, 0 0 100px #fff, 0 0 120px #fff, 0 0 180px #1a39ff, 0 0 250px #1a39ff, 0 0 300px #1a39ff, 0 0 350px #1a39ff, 0 0 390px #1a39ff;
+  }
+  to {    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #1a39ff, 0 0 70px #1a39ff, 0 0 80px #1a39ff, 0 0 100px #1a39ff, 0 0 150px #1a39ff;
+  }
+}
+
+
+@-webkit-keyframes neon7 {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #1a39ff, 0 0 35px #1a39ff, 0 0 40px #1a39ff, 0 0 50px #1a39ff, 0 0 75px #1a39ff;
+  }
+  to {
+   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #1a39ff, 0 0 70px #1a39ff, 0 0 80px #1a39ff, 0 0 100px #1a39ff, 0 0 150px #1a39ff;
+  }
+}
+/*glow for mozilla*/
+
+@-moz-keyframes neon7 {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #1a39ff, 0 0 35px #1a39ff, 0 0 40px #1a39ff, 0 0 50px #1a39ff, 0 0 75px #1a39ff;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #1a39ff, 0 0 70px #1a39ff, 0 0 80px #1a39ff, 0 0 100px #1a39ff, 0 0 150px #1a39ff;
+  }
+}
+/*glow*/
+
+
+@keyframes neon7 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #1a39ff, 0 0 70px #1a39ff, 0 0 80px #1a39ff, 0 0 100px #1a39ff, 0 0 150px #1a39ff;
+  }
+  to {   
+    
+    text-shadow: 0 0 80px #fff, 0 0 100px #fff, 0 0 120px #fff, 0 0 180px #1a39ff, 0 0 250px #1a39ff, 0 0 300px #1a39ff, 0 0 350px #1a39ff, 0 0 390px #1a39ff;
+  }
+}
+
+
+
+
 /******************************************/
 /**********END Added Effects***************/
 /******************************************/
@@ -200,8 +339,8 @@ a{
 /*****************Lineup*******************/
 /******************************************/
 .artists{
-	padding: 10px;
-	padding-bottom: 175px;
+  padding: 10px;
+  padding-bottom: 175px;
   margin: 25px;
   text-align: center;
 }
@@ -214,13 +353,13 @@ a{
 }
 
 .artists > a{
-	display: inline-block;
+  display: inline-block;
   padding:10px;
 }
 
 /*.artists > li::before,
 .artists > li::after{
-	content:"\2022";
+  content:"\2022";
 }*/
 
 
@@ -258,8 +397,8 @@ artist.vue:45*/
 
 
 .popup{
-	background-color: orange;
-	z-index: 1;
+  background-color: orange;
+  z-index: 1;
 
 }
 
@@ -273,10 +412,10 @@ artist.vue:45*/
 /******************************************/
 
 .ticketHeader{
-	text-align: center;
-	width: 100%;
-	border-left: 1px solid black;
-	border-right: 1px solid black;
+  text-align: center;
+  width: 100%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
   background-color: #333;
   opacity: 0.7;
   display: inline-block;
@@ -284,10 +423,10 @@ artist.vue:45*/
 }
 
 .ticketHeader li{
-	display: inline-block;
-	width: 31%;
-	padding-top: 5px;
-	padding-bottom: 5px;
+  display: inline-block;
+  width: 31%;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border-left: solid #f0f0f5 1px;
 }
 
@@ -296,12 +435,12 @@ artist.vue:45*/
 }
 
 .tickets{
-	padding-bottom: 130px;
+  padding-bottom: 130px;
   /*position: relative;*/
 }
 
 .ticketHeader a{
-	text-decoration: none;
+  text-decoration: none;
   color: #f0f0f5;
 
 }
@@ -357,17 +496,9 @@ artist.vue:45*/
 
 .hideMe{
   display:none;
-}
+}*/
 
 /******************************************/
 /**************END TICKETS*****************/
 /******************************************/
-
-
-
-
-
-
-
-
 
