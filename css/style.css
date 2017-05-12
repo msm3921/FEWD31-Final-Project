@@ -86,6 +86,10 @@ h1{
 	font-size: 1.2em;
 }
 
+a{
+  color:black;
+}
+
 /******************************************/
 /************Added Effects*****************/
 /******************************************/
@@ -195,38 +199,63 @@ h1{
 /******************************************/
 /*****************Lineup*******************/
 /******************************************/
-
 .artists{
 	padding: 10px;
 	padding-bottom: 175px;
+  margin: 25px;
+  text-align: center;
 }
 
-.artists a {
+.artists a span {
   color: black;
   text-decoration: none;
-  padding: 0 10px;
-  line-height: 1.5;
+  padding: 0 20px;
+  line-height: 1.5em;
 }
 
-.artists > li{
+.artists > a{
 	display: inline-block;
+  padding:10px;
 }
 
-/*
-here: https://www.coachella.com/lineup/
-they use both before and after and then
-use a combination of "right: -.375rem;"
-and left on the before & after. is there 
-a better way to do this?*/
-
-.artists > li::before,
+/*.artists > li::before,
 .artists > li::after{
 	content:"\2022";
+}*/
+
+
+/*@media (max-width: 1024px)
+artist.vue:45*/
+
+
+/*.artists > a::before {
+    left: .3125em;
 }
-/*
-another thing about that lineup page i like
-was how the rows aren't all uniform. not 
-sure how they staggered each one*/
+*/
+
+.artists > a::before
+{
+    content: "\25A0";
+    display: inline-block;
+    transform: rotate(45deg);
+    position: absolute;
+    font-size: .65em;
+    line-height: 2.30em;
+    text-decoration: none
+}
+
+/*this is giving me issues with spacing*/
+/*.artists > a::after
+{
+    content: "\25A0";
+    display: inline-block;
+    transform: rotate(45deg);
+    position: absolute;
+    font-size: .5em;
+    line-height: 2.75em;
+    text-decoration: none
+}*/
+
 
 .popup{
 	background-color: orange;
