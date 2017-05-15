@@ -2,34 +2,37 @@
 <html>
 <head>
 	<title>Lineup</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/reset.css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600|Pacifico" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="container">
 	<div class="content">
-		<header>
-			<h1>SweetLife Block Party</h1>
-			<nav class="clearfix">
-				<ul class="clearfix navlist">
-					<li>
-						<a class="firstA hvr-underline-from-center" href="generalinfo.html"> Info </a>
-					</li>
-					<li>
-						<a class="secondA hvr-underline-from-center middle-nav" href="tickets.html"> Tickets </a>
-					</li>
-					<li>
-						<a class="thirdA hvr-underline-from-center" href="lineup.html"> Lineup </a>
-					</li>
-				</ul>
-			</nav>
-		</header>
+			<header>
+				<nav class="clearfix container">
+	          <h1 class="clearfix">SweetLife Block Party</h1>
+	          <div class="navlist">
+	          	<img src="images/stars-and-bars-bw.png" width="75px" height="auto" />
+	          </div>
+					<ul class="clearfix hideMe navOptions">
+						<li id="out">
+							<a href="generalinfo.html"> Info </a>
+						</li>
+						<li id="out">
+							<a href="tickets.html"> Tickets </a>
+						</li>
+						<li id="out">
+							<a href="lineup.html"> Lineup </a>
+						</li>
+					</ul>
+				</nav>
+			</header>
 
 	<!-- placeholder image -->
 
 	<!-- <a href="http://placehold.it"><img alt="placeholder_image" src="http://placehold.it/960x267"></a> -->
-	<div class="main">
+	<div class="main lineupMain">
 		  <div class="artists">
 		<!-- 	  	<li><iframe src="https://open.spotify.com/embed?uri=spotify:album:4eLPsYPBmXABThSJ821sqY" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></li> -->	
 				<a href="#">
@@ -93,7 +96,7 @@
 					<span class="hvr-bob"> Local Natives </span>
 				</a>
 				<a href="#">
-					<span class="hvr-bob"> Miike Snbow </span>
+					<span class="hvr-bob"> Miike Snow </span>
 				</a>
 				<a href="#">
 					<span class="hvr-bob"> Kacey Musgraves </span>
@@ -134,5 +137,6 @@
 	</div> <!--END content class -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/lineup.js"></script>
+	<script src="js/nav.js"></script>
 </body> <!--END container class -->
 </html>

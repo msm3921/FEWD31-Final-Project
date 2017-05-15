@@ -1,0 +1,245 @@
+@media (min-width: 1100px){
+
+
+.container{
+	/*font-family: 'Exo 2', sans-serif;*/
+	font-size: 28px;
+	max-width: 960px;
+}
+
+
+header{
+	padding: 15px;
+	width: 100%;
+	float: left;	
+}
+
+
+h1{
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.navlist{
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  width:100%;
+}
+
+.navlist img{
+  float:right;
+  padding-right:10px;
+}
+
+.navOptions{
+  text-align: center;
+  width:100%;
+}
+
+
+#out{
+  /*
+  Ensure background is added first
+  */  
+  background: url("../images/watercolor.png");
+  
+   background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.navOptions>li{
+  display: inline-block;
+  width:25%;
+    margin:0;
+    padding:0;
+    padding-top: 25px;
+}
+
+.navOptions a { 
+  font-family: "Pacifico", cursive;
+  letter-spacing: .15em;
+   font-size: 5px;
+
+}
+.navOptions a:hover {
+  -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon6 1.5s ease-in-out infinite alternate;
+  animation: neon6 1.5s ease-in-out infinite alternate;
+}
+
+.navOptions a a:hover {
+  color: #fff;
+}
+
+
+.navOptions a {
+  text-decoration: none;
+  line-height: 1.5;
+  vertical-align: text-bottom;
+  margin: 0;
+  text-align: center;
+  font-size: 35px;
+}
+
+
+footer ul li a{
+padding:10px; 
+}
+
+/******************************************/
+/****************TICKETS*******************/
+/******************************************/
+
+.ticketHeader{
+  text-align: center;
+  width: 100%;
+/*  border-left: 1px solid black;
+  border-right: 1px solid black;
+  background-color: #333;
+  opacity: 0.7; */
+  display: inline-block;
+
+}
+
+.ticketHeader li{
+  display: inline-block;
+  width: 31%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-left: solid #f0f0f5 1px;
+}
+
+.ticketHeader li { 
+  font-family: 'Josefin Slab', serif;
+  letter-spacing: .15em;
+  text-shadow: 
+      1px -1px 0 #767676, 
+      -1px 2px 1px #737272, 
+      -2px 4px 1px #767474, 
+      -3px 6px 1px #787777, 
+      -4px 8px 1px #7b7a7a;
+}
+
+
+
+.ticketHeader li:hover {
+  -webkit-animation: neonGA 1.5s ease-in-out infinite alternate;
+  -moz-animation: neonGA 1.5s ease-in-out infinite alternate;
+  animation: neonGA 1.5s ease-in-out infinite alternate;
+}
+
+/*.navlist a a:hover {
+  color: #fff;
+}*/
+
+
+.navlist a {
+  text-decoration: none;
+  line-height: 1.5;
+  vertical-align: text-bottom;
+  margin: 0;
+  text-align: center;
+}
+
+
+.ticketHeader li:first-of-type{
+  border-left: none;
+}
+
+.tickets{
+  padding-bottom: 130px;
+  /*position: relative;*/
+}
+
+.ticketType{
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%
+}
+
+.ticketImage{
+  max-width: 50%;
+  float: left;
+  height: auto;
+  padding:15px;
+  padding-bottom: 30px;
+
+}
+
+.ticketInfo{
+  /*padding-top: 30px;*/
+  max-width: 50%;
+  float: left;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.ticketInfo h1{
+	display: block;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	background-color: gray;
+	opacity: .75;
+	padding: 15px;
+}
+
+.ticketInfo h2{
+	width: 30%;
+	margin: auto;
+	text-align: center;
+}
+
+.ticketInfo ul{
+	width: 80%;
+	margin: auto;
+}
+
+.placeholderInfo{
+  margin-top: 20px;
+ /* set height here is hacky & also changes position
+  of background image */
+  height: 425px;
+  width: 100%;
+}
+
+.startingImage{
+    position: absolute;
+    /*padding:10px;*/
+    transform: translateX(200%);
+    overflow: hidden;
+    top: 40%;
+}
+
+.startingInfo{
+    position: absolute;
+    padding-top: 0px;
+    transform: translateX(-200%);
+    top: 40%;
+}
+
+.back{
+  background: url("../images/watercolor.png");
+  background-size: cover;
+  color: #EFE6D7; 
+}
+
+.hideMe{
+  display:none;
+}
+
+/******************************************/
+/**************END TICKETS*****************/
+/******************************************/
+
+
+
+
+}

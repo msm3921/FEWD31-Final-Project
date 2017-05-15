@@ -1,0 +1,17 @@
+html, body{ background: #EFE6D7; }
+p{ margin: 0px; }
+
+#clip{
+  /*
+  Ensure background is added first
+  */  
+  background: url("../images/watercolor.png");
+  
+   background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 88px;
+  font-weight: bold;
+  text-align: center;
+}
+
