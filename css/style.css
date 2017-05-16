@@ -38,7 +38,7 @@ html {
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-
+  height: 100vw;
 }
 
 header{
@@ -50,6 +50,11 @@ header{
 h1{
 	margin: 0;
 	padding: 0;
+}
+
+h1{
+  font-size: 32px;
+  font-weight: 700;
 }
 
 .navlist{
@@ -91,7 +96,7 @@ h1{
   width:25%;
   margin:0;
   padding:0;
-  padding-top: 25px;
+  padding: 25px;
 }
 
 .navOptions a { 
@@ -121,6 +126,8 @@ h1{
 
 footer{
    text-align: center;
+   border: 15px solid blue;
+   height:55vw;
 }
 
 footer ul li {
@@ -135,8 +142,6 @@ footer ul li a img:hover {
   animation: neon6 1.5s ease-in-out infinite alternate;
 }
 
-
-}
 /******************************************/
 /*****************Lineup*******************/
 /******************************************/
@@ -147,7 +152,7 @@ footer ul li a img:hover {
 
 .artists{
   padding: 10px;
-  padding-bottom: 175px;
+  padding-top: 200px;
   margin: 25px;
   text-align: center;
 }
@@ -164,21 +169,6 @@ footer ul li a img:hover {
   padding:10px;
 }
 
-/*.artists > li::before,
-.artists > li::after{
-  content:"\2022";
-}*/
-
-
-/*@media (max-width: 1024px)
-artist.vue:45*/
-
-
-/*.artists > a::before {
-    left: .3125em;
-}
-*/
-
 .artists > a::before
 {
     content: "\25A0";
@@ -190,23 +180,18 @@ artist.vue:45*/
     text-decoration: none
 }
 
-/*this is giving me issues with spacing*/
-/*.artists > a::after
-{
-    content: "\25A0";
-    display: inline-block;
-    transform: rotate(45deg);
-    position: absolute;
-    font-size: .5em;
-    line-height: 2.75em;
-    text-decoration: none
-}*/
+#mylightbox{
+  height:400px;
+  width:500px;
+  overflow:hidden;
+  background-color:white;
+}
 
-
-.popup{
-  background-color: orange;
-  z-index: 1;
-
+#mylightbox img{
+  display:block;
+  width:300px;
+  height:auto;
+  margin:auto;
 }
 
 /******************************************/
@@ -218,19 +203,66 @@ artist.vue:45*/
 /****************TICKETS*******************/
 /******************************************/
 
+.main{
+height:30vw;
+border: 5px solid green;
+}
+
 .tickets{
   padding-bottom: 130px;
-  /*position: relative;*/
+  height:40vw;
+  border: 5px solid red;
+  margin:15px;
 }
 
 .ticketHeader a{
   text-decoration: none;
   color: #1a39ff;
+  font-weight: 800
+}
 
+.ticketHeader{
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  border-top: 3px solid #026978;
+  border-bottom: 3px solid #026978;
+  background-color: #f26051;
+  
+}
+
+.ticketHeader li{
+  display: inline-block;
+  width: 31%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-left: solid #f0f0f5 1px;
+}
+
+.ticketHeader li { 
+  font-family: 'Josefin Slab', serif;
+  letter-spacing: .15em;
+  text-shadow: 
+      1px -1px 0 #767676, 
+      -1px 2px 1px #737272, 
+      -2px 4px 1px #767474, 
+      -3px 6px 1px #787777, 
+      -4px 8px 1px #7b7a7a;
+}
+
+
+.ticketHeader li:hover {
+  -webkit-animation: neonGA 1.5s ease-in-out infinite alternate;
+  -moz-animation: neonGA 1.5s ease-in-out infinite alternate;
+  animation: neonGA 1.5s ease-in-out infinite alternate;
 }
 
 .gaButton a{ 
   color: #4BA436;
+}
+
+.ticketSection{
+  padding-top: 200px;
 }
 
 .ticketType{
@@ -251,15 +283,9 @@ artist.vue:45*/
 
 .placeholderInfo{
   margin-top: 20px;
- /* set height here is hacky & also changes position
-  of background image */
-  height: 425px;
-  width: 100%;
-
 }
 
 .ticketInfo{
-  /*padding-top: 30px;*/
   width:30%;
   float: left;
   display: inline-block;
@@ -275,27 +301,25 @@ artist.vue:45*/
 
 }
 
-.ticketImage{
+/*.ticketImage{
     -webkit-filter: drop-shadow(10px 10px 0 #1a39ff) 
                     drop-shadow(-5px -5px 0 #1a39ff);
     filter:drop-shadow(10px 10px 0 #1a39ff) 
            drop-shadow(-5px -5px 0 #1a39ff);
-
-}
+}*/
 
 
 .startingImage{
     position: absolute;
-    /*padding:10px;*/
     transform: translateX(200%);
     overflow: hidden;
-    top: 40%;
+    top: 55%;
 }
 
 .startingInfo{
     position: absolute;
    transform: translateX(-200%);
-    top: 40%;
+    top: 55%;
 }
 
 .back{

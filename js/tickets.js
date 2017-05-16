@@ -73,7 +73,7 @@ else if ((getType === 'vipButton')&$('.vipInfo').hasClass('active')){
       $('.gaInfo').removeClass('active');
       $('.vipInfo').removeClass('active');
     }
-  
+
 }
 })
 /******************************************/
