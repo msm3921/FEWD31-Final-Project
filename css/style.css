@@ -34,11 +34,11 @@ html {
 
 
 .content{
-  background-image: url("../images/Untitled2.png");
+  background-image: url("../images/blue-dots.png");
+  background-repeat: repeat;
+  background-position: top;
+  background-color: #00697f;
   margin: 0 auto;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 100vw;
 }
 
 header{
@@ -69,11 +69,19 @@ h1{
   float:right;
   padding-right:10px;
   margin-bottom: 25px;
+  padding-top: 15px;
 }
 
 .navOptions{
   text-align: center;
   width:100%;
+  text-align: center;
+   background-image:url("../images/footer_watercolor.png");
+   margin: 0 auto;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   height:20vw;
+   border: 1px solid black;
 }
 
 
@@ -124,10 +132,20 @@ h1{
   font-size: 35px;
 }
 
+.main{
+/*height:30vw;*/
+border: 5px solid green;
+}
+
+
 footer{
    text-align: center;
    border: 15px solid blue;
-   height:55vw;
+   background-image:url("../images/footer_watercolor.png");
+   margin: 0 auto;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   height:20vw;
 }
 
 footer ul li {
@@ -184,8 +202,13 @@ footer ul li a img:hover {
   height:400px;
   width:500px;
   overflow:hidden;
-  background-color:white;
+  background-color:#00697f;
+  background-image: url("../images/blue-dots.png");
+  background-repeat: repeat;
+  background-position: top;
+  border: 1px solid green;
 }
+
 
 #mylightbox img{
   display:block;
@@ -203,9 +226,14 @@ footer ul li a img:hover {
 /****************TICKETS*******************/
 /******************************************/
 
-.main{
-height:30vw;
-border: 5px solid green;
+.ticketsMain{
+  background-image: url("../images/blue-dots.png");
+  background-repeat: repeat;
+  background-position: top;
+  background-color: #00697f;
+  margin: 0 auto;
+  height:50vw;
+}
 }
 
 .tickets{
