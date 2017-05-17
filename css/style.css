@@ -34,8 +34,9 @@ html {
 
 
 .content{
-  background-image: url("../images/blue-dots.png");
-  background-repeat: repeat;
+  background-image: url("../images/washington-dc-skyline-michael-tompsett.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   background-position: top;
   background-color: #00697f;
   margin: 0 auto;
@@ -44,7 +45,8 @@ html {
 header{
 	padding: 15px;
 	width: 100%;
-	float: left;	
+	float: left;
+  height: 25vw;	
 }
 
 h1{
@@ -76,12 +78,13 @@ h1{
   text-align: center;
   width:100%;
   text-align: center;
-   background-image:url("../images/footer_watercolor.png");
+   /*background-image:url("../images/footer_watercolor.png");*/
    margin: 0 auto;
    background-repeat: no-repeat;
    background-size: 100% 100%;
    height:20vw;
    border: 1px solid black;
+   padding-top: 50px;
 }
 
 
@@ -134,18 +137,20 @@ h1{
 
 .main{
 /*height:30vw;*/
-border: 5px solid green;
+/*border: 5px solid green;*/
 }
 
 
 footer{
    text-align: center;
-   border: 15px solid blue;
-   background-image:url("../images/footer_watercolor.png");
+   /*border: 15px solid blue;*/
+/*   background-image:url("../images/breakingbear.jpg");
    margin: 0 auto;
    background-repeat: no-repeat;
-   background-size: 100% 100%;
+   background-size: 100% 100%;*/
+  background-color: #f26051;
    height:20vw;
+   padding-top: 100px;
 }
 
 footer ul li {
@@ -163,17 +168,65 @@ footer ul li a img:hover {
 /******************************************/
 /*****************Lineup*******************/
 /******************************************/
+.lineupSummary{
+  text-decoration: none;
+  color: #1a39ff;
+  font-size: 35px;
+  font-weight: 800;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  border-top: 3px solid #026978;
+  border-bottom: 3px solid #026978;
+  background-color: #f26051;
+  display: inline-block;
+  padding:15px;
+  font-family: 'Josefin Slab', serif;
+  letter-spacing: .15em;
+  text-shadow: 
+      1px -1px 0 #767676, 
+      -1px 2px 1px #737272, 
+      -2px 4px 1px #767474, 
+      -3px 6px 1px #787777, 
+      -4px 8px 1px #7b7a7a;
+}
+
 
 .lineupMain{
     padding: 0 50 200 50;
 }
 
+/*.takeUpSpace{
+  height: 15vw;
+  content: "";
+  border: 5px solid red;
+}*/
+
 .artists{
-  padding: 10px;
-  padding-top: 200px;
-  margin: 25px;
+  padding: 50px;
   text-align: center;
+  /*background-image: url(../images/cross-hatch-pattern.png);*/
+  background-image: url(../images/green-grass.png);
+  height: 60vw;
+  background-repeat: repeat;
+  background-position: top;
+  position: relative;
 }
+
+.artists::after{
+    height: 140px;
+    bottom: -100px;
+    background-image: url(../images/green-bottom-tear.png);
+    z-index: 2;
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-repeat: repeat;
+    background-position: top;
+}
+
 
 .artists a span {
   color: black;
@@ -206,7 +259,7 @@ footer ul li a img:hover {
   background-image: url("../images/blue-dots.png");
   background-repeat: repeat;
   background-position: top;
-  border: 1px solid green;
+  border: 1px solid orange;
 }
 
 
@@ -226,29 +279,6 @@ footer ul li a img:hover {
 /****************TICKETS*******************/
 /******************************************/
 
-.ticketsMain{
-  background-image: url("../images/blue-dots.png");
-  background-repeat: repeat;
-  background-position: top;
-  background-color: #00697f;
-  margin: 0 auto;
-  height:50vw;
-}
-}
-
-.tickets{
-  padding-bottom: 130px;
-  height:40vw;
-  border: 5px solid red;
-  margin:15px;
-}
-
-.ticketHeader a{
-  text-decoration: none;
-  color: #1a39ff;
-  font-weight: 800
-}
-
 .ticketHeader{
   text-align: center;
   width: 100%;
@@ -256,14 +286,14 @@ footer ul li a img:hover {
   border-top: 3px solid #026978;
   border-bottom: 3px solid #026978;
   background-color: #f26051;
+  padding-top: 15px;
+  padding-bottom: 15px;
   
 }
 
 .ticketHeader li{
   display: inline-block;
   width: 31%;
-  padding-top: 5px;
-  padding-bottom: 5px;
   border-left: solid #f0f0f5 1px;
 }
 
@@ -285,6 +315,14 @@ footer ul li a img:hover {
   animation: neonGA 1.5s ease-in-out infinite alternate;
 }
 
+.ticketHeader a{
+  text-decoration: none;
+  color: #1a39ff;
+  font-weight: 800;
+  font-size: 35px;
+}
+
+
 .gaButton a{ 
   color: #4BA436;
 }
@@ -293,19 +331,50 @@ footer ul li a img:hover {
   padding-top: 200px;
 }
 
+.ticketsMain{
+  background-image: url("../images/blue-dots.png");
+  background-repeat: repeat;
+  background-position: top;
+  background-color: #00697f;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.ticketsMain::after{
+    height: 140px;
+    bottom: -90px;
+    background-image: url(../images/bottom-tear.png);
+    z-index: 2;
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-repeat: repeat;
+    background-position: top;
+}
+
+.tickets{
+  padding-bottom: 130px;
+  height:40vw;
+  /*border: 5px solid red;*/
+}
+
 .ticketType{
   width: 100%;
   overflow: hidden;
 }
 
 .ticketImage{
-  width: 35%;
+  width: 25%;
   float: left;
   height: auto;
   padding:15px;
   padding-bottom: 30px;
   display: inline-block;
   vertical-align: middle;
+  z-index: 1;
 
 }
 
@@ -314,12 +383,14 @@ footer ul li a img:hover {
 }
 
 .ticketInfo{
-  width:30%;
+  width:40%;
   float: left;
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
   border-radius: 25px;
+  z-index: 1;
+
 }
 
 .ticketInfo{
@@ -339,15 +410,15 @@ footer ul li a img:hover {
 
 .startingImage{
     position: absolute;
-    transform: translateX(200%);
+    transform: translateX(400%);
     overflow: hidden;
-    top: 55%;
+    top: 5%;
 }
 
 .startingInfo{
     position: absolute;
    transform: translateX(-200%);
-    top: 55%;
+    top: 15%;
 }
 
 .back{

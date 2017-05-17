@@ -43,7 +43,7 @@ h1{
   /*
   Ensure background is added first
   */  
-  background: url("../images/watercolor.png");
+  /*background: url("../images/watercolor.png");*/
   
    background-attachment: fixed;
   -webkit-text-fill-color: transparent;
@@ -97,6 +97,7 @@ padding:10px;
 /****************TICKETS*******************/
 /******************************************/
 
+
 .ticketHeader{
   text-align: center;
   width: 100%;
@@ -109,8 +110,6 @@ padding:10px;
 .ticketHeader li{
   display: inline-block;
   width: 31%;
-  padding-top: 5px;
-  padding-bottom: 5px;
   border-left: solid #f0f0f5 1px;
 }
 
@@ -199,7 +198,7 @@ padding:10px;
 
 /*.startingImage{
     position: absolute;
-    transform: translateX(200%);
+    transform: translateX(400%);
     overflow: hidden;
     top: 40%;
 }

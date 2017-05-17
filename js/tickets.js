@@ -14,20 +14,20 @@ function showType(event){
   var getType = $(this).attr('class');
  
       if (getType !== 'gaButton' & $('.gaInfo').hasClass('reset')){
-      $('.gaInfo>.ticketImage').animate({left: "+=22%" }, 200,'easeOutBounce');
-      $('.gaInfo>.ticketInfo').animate({left: "-=70%" }, 200,'easeOutBounce');
+      $('.gaInfo>.ticketImage').animate({left: "+=35%" }, 200,'easeOutBounce');
+      $('.gaInfo>.ticketInfo').animate({left: "-=90%" }, 200,'easeOutBounce');
       $('.gaInfo').removeClass('reset');
 }
   
       if (getType !== 'vipButton' & $('.vipInfo').hasClass('reset')){
-      $('.vipInfo>.ticketImage').animate({left: "+=22%" }, 200,'easeOutBounce');
-      $('.vipInfo>.ticketInfo').animate({left: "-=70%" }, 200,'easeOutBounce');
+      $('.vipInfo>.ticketImage').animate({left: "+=35%" }, 200,'easeOutBounce');
+      $('.vipInfo>.ticketInfo').animate({left: "-=90%" }, 200,'easeOutBounce');
       $('.vipInfo').removeClass('reset');
 }   
   
       if (getType !== 'superButton' & $('.superVIPInfo').hasClass('reset')){
-      $('.superVIPInfo>.ticketImage').animate({left: "+=22%" }, 200,'easeOutBounce');
-      $('.superVIPInfo>.ticketInfo').animate({left: "-=70%" }, 200,'easeOutBounce');
+      $('.superVIPInfo>.ticketImage').animate({left: "+=35%" }, 200,'easeOutBounce');
+      $('.superVIPInfo>.ticketInfo').animate({left: "-=90%" }, 200,'easeOutBounce');
       $('.superVIPInfo').removeClass('reset');
 }
   
@@ -40,8 +40,8 @@ if ((getType === 'gaButton')&$('.gaInfo').hasClass('active')){
      $('.vipInfo').hide();
      $('.superVIPInfo').hide();
      $('.gaInfo').show();
-     $('.gaInfo>.ticketImage').animate({left: "-=22%" }, 1200,'easeOutBounce');
-   $('.gaInfo>.ticketInfo').animate({left: "+=70%" }, 1200,'easeOutBounce');
+     $('.gaInfo>.ticketImage').animate({left: "-=35%" }, 1200,'easeOutBounce');
+   $('.gaInfo>.ticketInfo').animate({left: "+=90%" }, 1200,'easeOutBounce');
     $('.vipInfo').removeClass('active');
     $('.superVIPInfo').removeClass('active');
   }
@@ -54,8 +54,8 @@ else if ((getType === 'vipButton')&$('.vipInfo').hasClass('active')){
      $('.gaInfo').hide();
      $('.superVIPInfo').hide();
      $('.vipInfo').show();
-     $('.vipInfo>.ticketImage').animate({left: "-=22%" }, 1200,'easeOutBounce');
-     $('.vipInfo>.ticketInfo').animate({left: "+=70%" }, 1200,'easeOutBounce');
+     $('.vipInfo>.ticketImage').animate({left: "-=35%" }, 1200,'easeOutBounce');
+     $('.vipInfo>.ticketInfo').animate({left: "+=90%" }, 1200,'easeOutBounce');
      $('.gaInfo').removeClass('active');
      $('.superVIPInfo').removeClass('active');
     }
@@ -68,8 +68,8 @@ else if ((getType === 'vipButton')&$('.vipInfo').hasClass('active')){
       $('.gaInfo').hide();
       $('.vipInfo').hide();
       $('.superVIPInfo').show();
-      $('.superVIPInfo>.ticketImage').animate({left: "-=22%" }, 1200,'easeOutBounce');
-      $('.superVIPInfo>.ticketInfo').animate({left: "+=70%" }, 1200,'easeOutBounce');
+      $('.superVIPInfo>.ticketImage').animate({left: "-=35%" }, 1200,'easeOutBounce');
+      $('.superVIPInfo>.ticketInfo').animate({left: "+=90%" }, 1200,'easeOutBounce');
       $('.gaInfo').removeClass('active');
       $('.vipInfo').removeClass('active');
     }
