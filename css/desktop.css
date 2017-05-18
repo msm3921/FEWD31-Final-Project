@@ -2,7 +2,6 @@
 
 
 .container{
-	/*font-family: 'Exo 2', sans-serif;*/
 	font-size: 28px;
 	max-width: 1100px;
 }
@@ -40,11 +39,6 @@ h1{
 
 
 #out{
-  /*
-  Ensure background is added first
-  */  
-  /*background: url("../images/watercolor.png");*/
-  
    background-attachment: fixed;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -146,7 +140,6 @@ padding:10px;
 
 .tickets{
   padding-bottom: 130px;
-  /*position: relative;*/
 }
 
 .ticketType{

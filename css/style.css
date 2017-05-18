@@ -2,6 +2,8 @@ html {
   box-sizing: border-box;
   height: 100%;
   font-family: 'Josefin Slab', serif;
+  color:#ccc;
+  font-weight: 800;
 
 }
 
@@ -40,13 +42,14 @@ html {
   background-position: top;
   background-color: #00697f;
   margin: 0 auto;
+  height: 125vh;
 }
 
 header{
 	padding: 15px;
 	width: 100%;
 	float: left;
-  height: 25vw;	
+  height: 45vh;	
 }
 
 h1{
@@ -78,13 +81,11 @@ h1{
   text-align: center;
   width:100%;
   text-align: center;
-   /*background-image:url("../images/footer_watercolor.png");*/
    margin: 0 auto;
    background-repeat: no-repeat;
    background-size: 100% 100%;
-   height:20vw;
+   height:20vh;
    border: 1px solid black;
-   padding-top: 50px;
 }
 
 
@@ -135,22 +136,12 @@ h1{
   font-size: 35px;
 }
 
-.main{
-/*height:30vw;*/
-/*border: 5px solid green;*/
-}
-
 
 footer{
-   text-align: center;
-   /*border: 15px solid blue;*/
-/*   background-image:url("../images/breakingbear.jpg");
-   margin: 0 auto;
-   background-repeat: no-repeat;
-   background-size: 100% 100%;*/
+  text-align: center;
   background-color: #f26051;
-   height:20vw;
-   padding-top: 100px;
+  height:85vh;
+  padding-top: 425px;
 }
 
 footer ul li {
@@ -197,7 +188,7 @@ footer ul li a img:hover {
 }
 
 /*.takeUpSpace{
-  height: 15vw;
+  height: 
   content: "";
   border: 5px solid red;
 }*/
@@ -205,9 +196,8 @@ footer ul li a img:hover {
 .artists{
   padding: 50px;
   text-align: center;
-  /*background-image: url(../images/cross-hatch-pattern.png);*/
   background-image: url(../images/green-grass.png);
-  height: 60vw;
+  height: 125vh;
   background-repeat: repeat;
   background-position: top;
   position: relative;
@@ -251,9 +241,13 @@ footer ul li a img:hover {
     text-decoration: none
 }
 
+.featherlight-content{
+  overflow: hidden;
+}
+
 #mylightbox{
-  height:400px;
-  width:500px;
+  height:500px;
+  width:600px;
   overflow:hidden;
   background-color:#00697f;
   background-image: url("../images/blue-dots.png");
@@ -262,14 +256,28 @@ footer ul li a img:hover {
   border: 1px solid orange;
 }
 
+#mylightbox div{
+  text-align: center;
+  font-size: 45px;
+  font-family: "Pacifico", cursive;
+  letter-spacing: .15em;
+  padding-top: 10px;
+}
 
 #mylightbox img{
   display:block;
-  width:300px;
+  width:200px;
   height:auto;
   margin:auto;
+  padding:15px;
+  position: relative;
 }
 
+#mylightbox iframe{
+  position: absolute;
+  left: 180px;
+  top:275px;
+}
 /******************************************/
 /***************END LINEUP*****************/
 /******************************************/
@@ -338,12 +346,13 @@ footer ul li a img:hover {
   background-color: #00697f;
   margin: 0 auto;
   position: relative;
+  height:125vh;
 }
 
 
 .ticketsMain::after{
     height: 140px;
-    bottom: -90px;
+    bottom: -100px;
     background-image: url(../images/bottom-tear.png);
     z-index: 2;
     content: "";
@@ -357,7 +366,6 @@ footer ul li a img:hover {
 
 .tickets{
   padding-bottom: 130px;
-  height:40vw;
   /*border: 5px solid red;*/
 }
 
@@ -383,14 +391,34 @@ footer ul li a img:hover {
 }
 
 .ticketInfo{
-  width:40%;
+  width:50%;
   float: left;
   display: inline-block;
   vertical-align: middle;
+  text-align: center;
   overflow: hidden;
   border-radius: 25px;
   z-index: 1;
+}
 
+.ticketInfo h1{
+  padding-top: 5px;
+  font-size: 35px;
+}
+
+.ticketInfo h2{
+  padding-top: 10px;
+  font-size: 32px;
+}
+
+.ticketInfo li{
+  padding:15px;
+  font-size: 25px;
+}
+
+
+.ticketInfo ul{
+  padding:15px;
 }
 
 .ticketInfo{
@@ -399,14 +427,6 @@ footer ul li a img:hover {
   animation: GAboxShadow 1.5s ease-in-out infinite alternate;
 
 }
-
-/*.ticketImage{
-    -webkit-filter: drop-shadow(10px 10px 0 #1a39ff) 
-                    drop-shadow(-5px -5px 0 #1a39ff);
-    filter:drop-shadow(10px 10px 0 #1a39ff) 
-           drop-shadow(-5px -5px 0 #1a39ff);
-}*/
-
 
 .startingImage{
     position: absolute;
@@ -429,6 +449,11 @@ footer ul li a img:hover {
 
 .hideMe{
   display:none;
+}
+
+.ticketsFooter{
+  height:35vh;
+  padding-top: 140px;
 }
 
 /******************************************/
