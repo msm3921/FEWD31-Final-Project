@@ -2,17 +2,174 @@
 	/*tablet portrait*/
 
 
+header{
+  padding: 15px;
+  height: auto;
+}
 
+.navOptions{
+  padding-top: 0px;
+}
+
+.navOptions>li{
+  display: inline-block;
+  width:25%;
+  margin:0;
+  padding:0;
+  padding: 25px;
+}
+
+.out{
+  font-size: 32px;
+}
+
+footer{
+  height:85vh;
+  padding-top: 405px;
+}
+
+footer ul li a img:hover {
+  -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon6 1.5s ease-in-out infinite alternate;
+  animation: neon6 1.5s ease-in-out infinite alternate;
+}
+
+/******************************************/
+/*****************Lineup*******************/
+/******************************************/
+
+.artists{
+  padding: 10px;
+  height: 100vh;
+}
+
+.artists span{
+  font-size: 25px;
 }
 
 
+.featherlight-content{
+  overflow: hidden;
+}
 
+#mylightbox{
+  width:350px;
+}
+
+#mylightbox div{
+  font-size: 32px;
+}
+
+#mylightbox img{
+  width:200px;
+  padding:15px;
+}
+
+#mylightbox iframe{
+    left: 60px;
+    top: 250px;
+}
+/******************************************/
+/***************END LINEUP*****************/
+/******************************************/
+
+
+}  /*END 768*/
+
+/******************************************/
+/***************END LINEUP*****************/
+/******************************************/
 
 
 @media (min-width: 1024px){
 	/*tablet landscape*/
 
 
+.container{
+	font-size: 28px;
+	max-width: 1100px;
+}
+
+.out{
+  font-size: 35px;
+}
+
+.navOptions{
+  border:none;
+}
+
+.navOptions a{
+  font-size: 32px;
+}
+
+
+.content{
+  height: 125vh;
+}
+
+header{
+  height: 45vh; 
+}
+
+
+.navOptions{
+  background: none;
+}
+
+footer{
+  height:85vh;
+  padding-top: 525px;
+}
+
+/******************************************/
+/*****************Lineup*******************/
+/******************************************/
+.lineupSummary{
+  font-size: 35px;
+  font-weight: 800;
+  border-top: 3px solid #026978;
+  border-bottom: 3px solid #026978;
+  letter-spacing: .15em;
+}
+
+
+.lineupMain{
+    padding: 0 50 200 50;
+}
+
+.artists{
+  padding: 50px;
+  height: 125vh;
+}
+
+.artists a{
+  padding:25px;
+}
+
+#mylightbox{
+  height:600px;
+  width:600px;
+}
+
+#mylightbox div{
+  font-size: 45px;
+  padding-top: 10px;
+}
+
+#mylightbox img{
+  width:325px;
+  padding:15px;
+}
+
+#mylightbox iframe{
+  left: 200px;
+  top:400px;
+}
+
+
+/******************************************/
+/***************END LINEUP*****************/
+/******************************************/
 
 
 

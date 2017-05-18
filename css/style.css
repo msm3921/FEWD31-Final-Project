@@ -42,24 +42,21 @@ html {
   background-position: top;
   background-color: #00697f;
   margin: 0 auto;
-  height: 125vh;
 }
 
 header{
-	padding: 15px;
 	width: 100%;
 	float: left;
-  height: 45vh;	
 }
 
-h1{
-	margin: 0;
-	padding: 0;
-}
 
 h1{
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 700;
+  font-family: "Pacifico", cursive;
+  letter-spacing: .15em;
+  margin: 0;
+  padding: 15 0px;
 }
 
 .navlist{
@@ -73,8 +70,8 @@ h1{
 .navlist img{
   float:right;
   padding-right:10px;
-  margin-bottom: 25px;
   padding-top: 15px;
+  margin-bottom: 75px;
 }
 
 .navOptions{
@@ -84,12 +81,13 @@ h1{
    margin: 0 auto;
    background-repeat: no-repeat;
    background-size: 100% 100%;
-   height:20vh;
    border: 1px solid black;
+   background-color:rgba(204,204,204,.7);
+
 }
 
 
-#out{
+.out{
   /*
   Ensure background is added first
   */  
@@ -97,23 +95,22 @@ h1{
   background-attachment: fixed;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
 }
 
-
-.navOptions>li{
-  display: inline-block;
-  width:25%;
-  margin:0;
-  padding:0;
-  padding: 25px;
+h1{
+  padding: 15px 0px;
 }
+
 
 .navOptions a { 
   font-family: "Pacifico", cursive;
   letter-spacing: .15em;
+  text-decoration: none;
+  vertical-align: text-bottom;
+  margin: 0;
 }
 
 .navOptions a:hover {
@@ -127,21 +124,9 @@ h1{
 }
 
 
-.navOptions a {
-  text-decoration: none;
-  line-height: 1.5;
-  vertical-align: text-bottom;
-  margin: 0;
-  text-align: center;
-  font-size: 35px;
-}
-
-
 footer{
   text-align: center;
   background-color: #f26051;
-  height:85vh;
-  padding-top: 425px;
 }
 
 footer ul li {
@@ -160,16 +145,15 @@ footer ul li a img:hover {
 /*****************Lineup*******************/
 /******************************************/
 .lineupSummary{
+  font-size: 25px;
   text-decoration: none;
   color: #1a39ff;
-  font-size: 35px;
-  font-weight: 800;
+  background-color: #f26051;
   text-align: center;
   width: 100%;
   display: inline-block;
   border-top: 3px solid #026978;
   border-bottom: 3px solid #026978;
-  background-color: #f26051;
   display: inline-block;
   padding:15px;
   font-family: 'Josefin Slab', serif;
@@ -183,29 +167,15 @@ footer ul li a img:hover {
 }
 
 
-.lineupMain{
-    padding: 0 50 200 50;
-}
-
-/*.takeUpSpace{
-  height: 
-  content: "";
-  border: 5px solid red;
-}*/
-
 .artists{
-  padding: 50px;
   text-align: center;
   background-image: url(../images/green-grass.png);
-  height: 125vh;
   background-repeat: repeat;
   background-position: top;
   position: relative;
 }
 
 .artists::after{
-    height: 140px;
-    bottom: -100px;
     background-image: url(../images/green-bottom-tear.png);
     z-index: 2;
     content: "";
@@ -216,7 +186,6 @@ footer ul li a img:hover {
     background-repeat: repeat;
     background-position: top;
 }
-
 
 .artists a span {
   color: black;
@@ -241,13 +210,11 @@ footer ul li a img:hover {
     text-decoration: none
 }
 
-.featherlight-content{
+/*.featherlight-content{
   overflow: hidden;
-}
+}*/
 
 #mylightbox{
-  height:500px;
-  width:600px;
   overflow:hidden;
   background-color:#00697f;
   background-image: url("../images/blue-dots.png");
@@ -258,26 +225,21 @@ footer ul li a img:hover {
 
 #mylightbox div{
   text-align: center;
-  font-size: 45px;
   font-family: "Pacifico", cursive;
   letter-spacing: .15em;
-  padding-top: 10px;
 }
 
 #mylightbox img{
   display:block;
-  width:200px;
   height:auto;
   margin:auto;
-  padding:15px;
   position: relative;
 }
 
 #mylightbox iframe{
   position: absolute;
-  left: 180px;
-  top:275px;
 }
+
 /******************************************/
 /***************END LINEUP*****************/
 /******************************************/

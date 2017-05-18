@@ -7,6 +7,10 @@ $('.navlist img').click(showNav);
     
    $('.navOptions').toggleClass('hideMe');
     console.log('navShow');
+
+
+
+
   }
 })
 
