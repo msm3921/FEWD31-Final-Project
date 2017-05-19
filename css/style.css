@@ -141,6 +141,10 @@ footer ul li a img:hover {
   animation: neon6 1.5s ease-in-out infinite alternate;
 }
 
+.hideMe{
+  display:none;
+}
+
 /******************************************/
 /*****************Lineup*******************/
 /******************************************/
@@ -256,8 +260,8 @@ footer ul li a img:hover {
   border-top: 3px solid #026978;
   border-bottom: 3px solid #026978;
   background-color: #f26051;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   
 }
 
@@ -289,16 +293,7 @@ footer ul li a img:hover {
   text-decoration: none;
   color: #1a39ff;
   font-weight: 800;
-  font-size: 35px;
-}
-
-
-.gaButton a{ 
-  color: #4BA436;
-}
-
-.ticketSection{
-  padding-top: 200px;
+  font-size: 25px;
 }
 
 .ticketsMain{
@@ -308,13 +303,10 @@ footer ul li a img:hover {
   background-color: #00697f;
   margin: 0 auto;
   position: relative;
-  height:125vh;
 }
 
 
 .ticketsMain::after{
-    height: 140px;
-    bottom: -100px;
     background-image: url(../images/bottom-tear.png);
     z-index: 2;
     content: "";
@@ -328,24 +320,14 @@ footer ul li a img:hover {
 
 .tickets{
   padding-bottom: 130px;
-  /*border: 5px solid red;*/
 }
 
 .ticketType{
+  border-radius: 10px;
   width: 100%;
   overflow: hidden;
-}
-
-.ticketImage{
-  width: 25%;
-  float: left;
-  height: auto;
-  padding:15px;
-  padding-bottom: 30px;
-  display: inline-block;
-  vertical-align: middle;
-  z-index: 1;
-
+  padding: 25px;
+  display:none;
 }
 
 .placeholderInfo{
@@ -353,7 +335,7 @@ footer ul li a img:hover {
 }
 
 .ticketInfo{
-  width:50%;
+  width: 100%;
   float: left;
   display: inline-block;
   vertical-align: middle;
@@ -363,24 +345,46 @@ footer ul li a img:hover {
   z-index: 1;
 }
 
+.ticketImage{
+  display:none;
+}
+
 .ticketInfo h1{
+  display: block;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: gray;
   padding-top: 5px;
-  font-size: 35px;
-}
-
-.ticketInfo h2{
-  padding-top: 10px;
-  font-size: 32px;
-}
-
-.ticketInfo li{
-  padding:15px;
   font-size: 25px;
 }
 
 
+.ticketInfo h2{
+  padding-top: 10px;
+  font-size: 25px;
+}
+
+.ticketInfo li{
+  padding:5 15px;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+/*
+.ticketInfo li::before
+{
+    content: "\25A0";
+    display: inline-block;
+    transform: rotate(45deg);
+    position: absolute;
+    font-size: .65em;
+    line-height: 2.30em;
+    text-decoration: none
+}
+*/
+
 .ticketInfo ul{
-  padding:15px;
+  padding: 0 15 15 15px;
 }
 
 .ticketInfo{
@@ -391,15 +395,12 @@ footer ul li a img:hover {
 }
 
 .startingImage{
-    position: absolute;
-    transform: translateX(400%);
     overflow: hidden;
+    transform: translateX(400%);
     top: 5%;
 }
 
 .startingInfo{
-    position: absolute;
-   transform: translateX(-200%);
     top: 15%;
 }
 
@@ -409,14 +410,11 @@ footer ul li a img:hover {
   color: #EFE6D7; 
 }
 
-.hideMe{
-  display:none;
-}
-
 .ticketsFooter{
   height:35vh;
   padding-top: 140px;
 }
+
 
 /******************************************/
 /**************END TICKETS*****************/

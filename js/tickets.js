@@ -8,9 +8,11 @@ console.log('ready');
 $('.ticketHeader li').click(showType);
 
 
-function showType(event){
+ function showType(event){
   event.preventDefault();
 
+  // window.addEventListener('resize',function(){
+  // if(window.innerWidth > 600){
   var getType = $(this).attr('class');
  
       if (getType !== 'gaButton' & $('.gaInfo').hasClass('reset')){
@@ -44,7 +46,11 @@ if ((getType === 'gaButton')&$('.gaInfo').hasClass('active')){
    $('.gaInfo>.ticketInfo').animate({left: "+=110%" }, 1200,'easeOutBounce');
     $('.vipInfo').removeClass('active');
     $('.superVIPInfo').removeClass('active');
-  }
+
+
+} //end gaButton
+
+
 else if ((getType === 'vipButton')&$('.vipInfo').hasClass('active')){
    console.log('nothing');
 }
@@ -58,7 +64,10 @@ else if ((getType === 'vipButton')&$('.vipInfo').hasClass('active')){
      $('.vipInfo>.ticketInfo').animate({left: "+=110%" }, 1200,'easeOutBounce');
      $('.gaInfo').removeClass('active');
      $('.superVIPInfo').removeClass('active');
-    }
+
+} //end vipButton
+
+
  else if ((getType === 'superButton')&$('.superVIPInfo').hasClass('active')){
    console.log('nothing');
 }
@@ -72,10 +81,18 @@ else if ((getType === 'vipButton')&$('.vipInfo').hasClass('active')){
       $('.superVIPInfo>.ticketInfo').animate({left: "+=110%" }, 1200,'easeOutBounce');
       $('.gaInfo').removeClass('active');
       $('.vipInfo').removeClass('active');
-    }
 
-}
-})
+
+} //end superButton
+
+// } //end inner window
+
+// }) //end window.addEventListener
+
+} //end showType
+
+}) //end document.ready
+
 /******************************************/
 /**************END TICKETS*****************/
 /******************************************/

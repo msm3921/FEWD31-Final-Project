@@ -34,7 +34,7 @@
 	text-align:left;
 	vertical-align:middle;
 	display:inline-block;
-	overflow:auto;
+	overflow:hidden;
 	padding:25px 25px 0;
 	border-bottom:25px solid transparent;
 	margin-left:5%;

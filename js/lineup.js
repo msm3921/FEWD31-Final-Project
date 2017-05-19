@@ -58,7 +58,6 @@ var request2 =$.ajax({
             $('#mylightbox div').html(target);
             $('#mylightbox img').attr('src', imageUrl);
             $('[data-featherlight]').trigger('click');
-            $('html').css("overflow:hidden");
              
               // insert all your dynamic stuff here...
             }) //END REQUEST2

@@ -74,6 +74,70 @@ footer ul li a img:hover {
 /******************************************/
 
 
+
+/******************************************/
+/****************TICKETS*******************/
+/******************************************/
+
+
+
+.ticketsMain{
+  height:85vh;
+}
+
+
+.ticketsMain::after{
+    height: 140px;
+    bottom: -100px;
+}
+
+
+.ticketsFooter{
+  height:35vh;
+  padding-top: 140px;
+}
+
+.startingImage{
+    position: absolute;
+    transform: translateX(180%);
+    overflow: hidden;
+    top: 45%;
+}
+
+.startingInfo{
+    position: absolute;
+    padding-top: 0px;
+    overflow: hidden;
+    transform: translateX(-140%);
+    top: 5%;
+}
+
+.ticketImage{
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 1;
+  padding:15px;
+  padding-bottom: 30px;
+  display: inline;
+}
+
+
+.ticketInfo{
+  max-width: 70%;
+  display: inline-block;
+  overflow: hidden;
+  padding:0px;
+}
+
+/******************************************/
+/**************END TICKETS*****************/
+/******************************************/
+
+
+
+
 }  /*END 768*/
 
 /******************************************/
@@ -169,6 +233,114 @@ footer{
 
 /******************************************/
 /***************END LINEUP*****************/
+/******************************************/
+
+
+/******************************************/
+/****************TICKETS*******************/
+/******************************************/
+
+.ticketHeader{
+  padding-top: 15px;
+  padding-bottom: 15px; 
+}
+
+.ticketHeader a{
+  font-size: 35px;
+}
+
+
+
+.ticketSection{
+  padding-top: 200px;
+}
+
+.ticketsMain{
+  height:85vh;
+}
+
+
+.ticketsMain::after{
+    height: 140px;
+    bottom: -100px;
+}
+
+.tickets{
+  padding-bottom: 130px;
+}
+
+
+
+.ticketType{
+  margin-bottom: 20px;
+  display: none;
+}
+
+.ticketImage{
+  width: 25%;
+  float: left;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 1;
+  padding:15px;
+  padding-bottom: 30px;
+  display: inline;
+}
+
+
+.ticketInfo{
+  max-width: 50%;
+  float: left;
+  display: inline-block;
+  overflow: hidden;
+  padding:0px;
+}
+
+.ticketInfo h1{
+  font-size: 25px;
+  padding: 15px;
+}
+
+.ticketInfo h2{
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+
+.ticketInfo ul{
+  width: 80%;
+  margin: auto;
+}
+
+.placeholderInfo{
+  margin-top: 20px;
+}
+
+.startingImage{
+    transform: translateX(400%);
+    top: 18%;
+}
+
+.startingInfo{
+    padding-top: 0px;
+    transform: translateX(-200%);
+    top: 25%;
+}
+
+.back{
+  background: url("../images/watercolor.png");
+  background-size: cover;
+  color: #EFE6D7; 
+}
+
+.hideMe{
+  display:none;
+}
+
+
+/******************************************/
+/**************END TICKETS*****************/
 /******************************************/
 
 
