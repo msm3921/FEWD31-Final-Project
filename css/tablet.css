@@ -82,7 +82,7 @@ footer ul li a img:hover {
 
 
 .ticketsMain{
-  height:85vh;
+  height: 185vh;
 }
 
 
@@ -181,8 +181,8 @@ header{
 }
 
 footer{
-  height:85vh;
-  padding-top: 525px;
+    height: 155vh;
+    padding-top: 595px;
 }
 
 /******************************************/
@@ -203,7 +203,7 @@ footer{
 
 .artists{
   padding: 50px;
-  height: 125vh;
+  height: 175vh;
 }
 
 .artists a{
