@@ -34,10 +34,10 @@ html {
 }
 
 
-.content{
+header{
   background-image: url("../images/washington-dc-skyline-michael-tompsett.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size:cover;
   background-position: top;
   background-color: #00697f;
   margin: 0 auto;
@@ -153,6 +153,26 @@ footer ul li a img:hover {
   width:100%;
 }
 
+.gaContents{
+  text-align: center;
+  background-image: url(../images/green-grass.png);
+  background-repeat: repeat;
+  background-position: top;
+  position: relative;
+}
+
+.gaContents::after{
+    background-image: url(../images/green-bottom-tear.png);
+    z-index: 2;
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-repeat: repeat;
+    background-position: top;
+}
+
 
 .gaSection{
   overflow:hidden;
@@ -164,6 +184,10 @@ footer ul li a img:hover {
   border-radius: 15px;
   width: 80%;
   margin: auto;
+  text-align: center;
+}
+
+.gaSection{
   margin-bottom: 20px;
 }
 
@@ -171,13 +195,14 @@ footer ul li a img:hover {
   text-align: center;
   font-family: "Pacifico", cursive;
   letter-spacing: .15em;
-  font-size: 35px;
 }
 
-.gaSection p{
-    font-size: 25px;
-    border: 1px solid orange;
+.center{
+  width: 90%;
+  margin: auto;
+  content: '';
 }
+
 
 /******************************************/
 /************END General Info**************/
@@ -218,7 +243,7 @@ footer ul li a img:hover {
 }
 
 
-.artists::after, .infoSection::after{
+.artists::after{
     background-image: url(../images/green-bottom-tear.png);
     z-index: 2;
     content: "";
@@ -310,6 +335,10 @@ footer ul li a img:hover {
   border-left: solid #f0f0f5 1px;
 }
 
+.ticketHeader li:first-of-type{
+  border-left: none;
+}
+
 .ticketHeader li { 
   font-family: 'Josefin Slab', serif;
   letter-spacing: .15em;
@@ -332,7 +361,7 @@ footer ul li a img:hover {
   text-decoration: none;
   color: #1a39ff;
   font-weight: 800;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 li .gaButton{

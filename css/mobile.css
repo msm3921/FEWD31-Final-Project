@@ -28,6 +28,62 @@ footer{
   padding-top: 900px;
 }
 
+
+/******************************************/
+/***********General Info*******************/
+/******************************************/
+
+.generalInfo{
+  width:100%;
+}
+
+.gaContents{
+  height: 275vh;
+}
+
+.gaContents::after{
+  height: 140px;
+  bottom: -110px;
+}
+
+
+.gaSection h1{
+  font-size: 25px;
+}
+
+.center{
+  width: 90%;
+  margin: auto;
+  content: '';
+}
+
+.gaSection p{
+    font-size: 15px;  
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+
+.gaSection img{
+  display: block;
+  width: 250px;
+  margin:auto;
+  margin-bottom: 10px;
+  padding-top: 15px;
+}
+
+.indexFooter{
+  height:35vh;
+  padding-top: 140px;
+}
+
+/******************************************/
+/************END General Info**************/
+/******************************************/
+
+
 /******************************************/
 /*****************Lineup*******************/
 /******************************************/
@@ -98,7 +154,7 @@ footer{
 /******************************************/
 
 .ticketsMain{
-  height:50vh;
+  height:100vh;
 }
 
 
@@ -141,6 +197,37 @@ footer{
   height:120vh;
   padding-top: 585px;
 }
+
+/******************************************/
+/***********General Info*******************/
+/******************************************/
+
+.generalInfo{
+  width:100%;
+}
+
+.gaContents{
+  height: 400vh;
+}
+
+
+.gaSection h1{
+  font-size: 32px;
+}
+
+.gaSection p{
+    font-size: 25px;  
+}
+
+
+.gaSection img{
+  width: 275px;
+}
+
+/******************************************/
+/************END General Info**************/
+/******************************************/
+
 
 /******************************************/
 /*****************Lineup*******************/

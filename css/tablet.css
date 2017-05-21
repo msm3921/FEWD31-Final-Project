@@ -33,6 +33,25 @@ footer ul li a img:hover {
   -moz-animation: neon6 1.5s ease-in-out infinite alternate;
   animation: neon6 1.5s ease-in-out infinite alternate;
 }
+/******************************************/
+/***********General Info*******************/
+/******************************************/
+
+.gaContents{
+  height: 325vh;
+}
+
+
+
+.gaSection img{
+  width: 300px;
+}
+
+/******************************************/
+/************END General Info**************/
+/******************************************/
+
+
 
 /******************************************/
 /*****************Lineup*******************/
@@ -82,7 +101,7 @@ footer ul li a img:hover {
 
 
 .ticketsMain{
-  height: 185vh;
+  height: 105vh;
 }
 
 
@@ -91,18 +110,16 @@ footer ul li a img:hover {
     bottom: -100px;
 }
 
+.ticketHeader a{
+  font-size: 32px;
+}
 
 .ticketsFooter{
   height:35vh;
   padding-top: 140px;
 }
 
-.startingImage{
-    position: absolute;
-    transform: translateX(180%);
-    overflow: hidden;
-    top: 45%;
-}
+
 
 .startingInfo{
     position: absolute;
@@ -111,18 +128,6 @@ footer ul li a img:hover {
     transform: translateX(-140%);
     top: 5%;
 }
-
-.ticketImage{
-  max-width: 100%;
-  height: auto;
-  display: inline-block;
-  vertical-align: middle;
-  z-index: 1;
-  padding:15px;
-  padding-bottom: 30px;
-  display: inline;
-}
-
 
 .ticketInfo{
   max-width: 70%;
@@ -184,6 +189,49 @@ footer{
     height: 155vh;
     padding-top: 595px;
 }
+/******************************************/
+/***********General Info*******************/
+/******************************************/
+
+.gaContents{
+  height: 225vh;
+}
+
+
+.gaSection h1{
+  font-size: 32px;
+}
+
+.gaSection p{
+    font-size: 25px;  
+}
+
+.gaSection:nth-child(2) p{
+  width: 50%;
+  float: left;
+}
+
+.gaSection:nth-child(3) p{
+  width: 50%;
+  float: right;
+}
+
+.gaSection img{
+  width: 325px;
+}
+
+.gaSection:nth-child(2) img{
+  float: right;
+}
+
+.gaSection:nth-child(3) img{
+  float: left;
+}
+
+/******************************************/
+/************END General Info**************/
+/******************************************/
+
 
 /******************************************/
 /*****************Lineup*******************/
@@ -275,6 +323,14 @@ footer{
   margin-bottom: 20px;
   display: none;
 }
+
+.startingImage{
+    position: absolute;
+    transform: translateX(180%);
+    overflow: hidden;
+    top: 45%;
+}
+
 
 .ticketImage{
   width: 25%;
