@@ -188,7 +188,7 @@ footer{
 /******************************************/
 /*****************Lineup*******************/
 /******************************************/
-.lineupSummary{
+.lineupSummary, .generalInfo{
   font-size: 35px;
   font-weight: 800;
   border-top: 3px solid #026978;

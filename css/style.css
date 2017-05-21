@@ -4,7 +4,6 @@ html {
   font-family: 'Josefin Slab', serif;
   color:#ccc;
   font-weight: 800;
-
 }
 
 *,
@@ -145,10 +144,49 @@ footer ul li a img:hover {
   display:none;
 }
 
+
+/******************************************/
+/***********General Info*******************/
+/******************************************/
+
+.generalInfo{
+  width:100%;
+}
+
+
+.gaSection{
+  overflow:hidden;
+  background-color:#00697f;
+  background-image: url("../images/blue-dots.png");
+  background-repeat: repeat;
+  background-position: top;
+  border: 15px solid #f26051;
+  border-radius: 15px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.gaSection h1{
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  letter-spacing: .15em;
+  font-size: 35px;
+}
+
+.gaSection p{
+    font-size: 25px;
+    border: 1px solid orange;
+}
+
+/******************************************/
+/************END General Info**************/
+/******************************************/
+
 /******************************************/
 /*****************Lineup*******************/
 /******************************************/
-.lineupSummary{
+.lineupSummary, .generalInfo{
   font-size: 25px;
   text-decoration: none;
   color: #1a39ff;
@@ -179,7 +217,8 @@ footer ul li a img:hover {
   position: relative;
 }
 
-.artists::after{
+
+.artists::after, .infoSection::after{
     background-image: url(../images/green-bottom-tear.png);
     z-index: 2;
     content: "";
@@ -294,6 +333,10 @@ footer ul li a img:hover {
   color: #1a39ff;
   font-weight: 800;
   font-size: 25px;
+}
+
+li .gaButton{
+  border-left-width: 0px;
 }
 
 .ticketsMain{
