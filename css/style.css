@@ -189,6 +189,7 @@ footer ul li a img:hover {
 
 .gaSection:first-of-type{
   border:none;
+  content: '';
 }
 
 .gaSection{
