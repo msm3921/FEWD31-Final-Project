@@ -256,10 +256,10 @@ footer ul li a img:hover {
 }
 
 .artists a span {
-  color: black;
   text-decoration: none;
   padding: 0 20px;
   line-height: 1.5em;
+  color:black;
 }
 
 .artists > a{
@@ -272,6 +272,7 @@ footer ul li a img:hover {
     content: "\25A0";
     display: inline-block;
     transform: rotate(45deg);
+    color:black;
     position: absolute;
     font-size: .65em;
     line-height: 2.30em;
@@ -442,18 +443,6 @@ li .gaButton{
   font-size: 25px;
   margin-bottom: 10px;
 }
-/*
-.ticketInfo li::before
-{
-    content: "\25A0";
-    display: inline-block;
-    transform: rotate(45deg);
-    position: absolute;
-    font-size: .65em;
-    line-height: 2.30em;
-    text-decoration: none
-}
-*/
 
 .ticketInfo ul{
   padding: 0 15 15 15px;

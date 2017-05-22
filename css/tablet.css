@@ -258,6 +258,13 @@ footer{
   padding:25px;
 }
 
+.artists > a::before
+{
+    font-size: .95em;
+    line-height: 2.30em;
+    text-decoration: none
+}
+
 #mylightbox{
   height:600px;
   width:600px;
