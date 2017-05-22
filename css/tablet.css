@@ -206,12 +206,12 @@ footer{
     font-size: 25px;  
 }
 
-.gaSection:nth-child(2) p{
+.gaSection:nth-child(3) p{
   width: 50%;
   float: left;
 }
 
-.gaSection:nth-child(3) p{
+.gaSection:nth-child(4) p{
   width: 50%;
   float: right;
 }
@@ -220,11 +220,11 @@ footer{
   width: 325px;
 }
 
-.gaSection:nth-child(2) img{
+.gaSection:nth-child(3) img{
   float: right;
 }
 
-.gaSection:nth-child(3) img{
+.gaSection:nth-child(4) img{
   float: left;
 }
 

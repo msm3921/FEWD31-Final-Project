@@ -187,6 +187,10 @@ footer ul li a img:hover {
   text-align: center;
 }
 
+.gaSection:first-of-type{
+  border:none;
+}
+
 .gaSection{
   margin-bottom: 20px;
 }
